@@ -16,11 +16,11 @@
 ### 🗄️ Модуль 2: Робота з базами даних (SQL & PostgreSQL)
 * [📁 12_postgres_basics](12_postgres_basics) — Основи реляційних БД, створення перших таблиць у PostgreSQL.
 * [📁 13_postgres_create_table_select_validation](13_postgres_create_table_select_validation) — Проєктування схем даних, типи даних та валідація при створенні.
-* [📁 14_postgres_CRUD](14_postgres_crud) — Операції маніпулювання даними (Insert, Update, Delete).
+* [📁 14_postgres_crud](14_postgres_crud) — Операції маніпулювання даними (Insert, Update, Delete).
 * [📁 15_postgres_joins](15_postgres_joins) — Об'єднання таблиць (INNER, LEFT, RIGHT, FULL JOIN).
-* [📁 16_postgres_join_union](16_postgres_join_union) — Розширене поєднання даних через JOIN та вертикальне об'єднанняUNION.
+* [📁 16_postgres_join_union](16_postgres_join_union) — Розширене поєднання даних через JOIN та вертикальне об'єднання UNION.
 * [📁 17_postgres_group_by](17_postgres_group_by) — Групування даних та фільтрація агрегованих значень (HAVING).
-* [📁 18_postgres_subqueries_CTE](18_postgres_subqueries_cte) — Підзапити та використання узагальнених табличних виразів (CTE) для складних звітів.
+* [📁 18_postgres_subqueries_cte](18_postgres_subqueries_cte) — Підзапити та використання узагальнених табличних виразів (CTE) для складних звітів.
 * [📁 19_postgres_pl_pg_sql](19_postgres_pl_pg_sql) — Написання процедурних функцій та тригерів на мові PL/pgSQL.
 
 ### 📉 Модуль 3: Бізнес-аналітика та візуалізація в Power BI
