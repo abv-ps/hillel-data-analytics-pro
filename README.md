@@ -7,7 +7,7 @@
 * [📁 04_python_functions](04_python_functions) — Написання користувацьких функцій та оптимізація коду.
 * [📁 05_python_files](05_python_files) — Робота з файлами та інтеграція з Monobank API.
 * [📁 06_python_requests_AI](06_python_requests_AI) — Запити до Meteo API та базова інтеграція з моделями ШІ.
-* [📁 07_python_pandas](07-python_pandas) — Вступ до аналізу даних за допомогою бібліотеки Pandas (UCI датасет).
+* [📁 07_python_pandas](07_python_pandas) — Вступ до аналізу даних за допомогою бібліотеки Pandas (UCI датасет).
 * [📁 08_python_viz](08_python_viz) — Візуалізація даних та побудова графіків (Matplotlib/Seaborn).
 * [📁 09_python_stat](09_python_stat) — Математична статистика та аналіз даних таксі.
 * [📁 10_python_LLM](10_python_LLM) — Робота з текстовими даними та великими мовними моделями.
