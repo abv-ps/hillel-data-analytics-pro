@@ -15,8 +15,8 @@
 
 ### 🗄️ Модуль 2: Робота з базами даних (SQL & PostgreSQL)
 * [📁 12_postgres_basics](12_postgres_basics) — Основи реляційних БД, створення перших таблиць у PostgreSQL.
-* [📁 13_postgres_create_table_select_validation](13_postgres_create_table_select_validation) — Проєктування схем даних, типи даних та валідація при створенні.
-* [📁 14_postgres_crud](14_postgres_crud) — Операції маніпулювання даними (Insert, Update, Delete).
+* [📁 13_postgres_create_table_select_validate](13_postgres_create_table_select_validate) — Проєктування схем даних, типи даних та валідація при створенні.
+* [📁 14_postgres_where_order_by_limit](14_postgres_where_order_by_limit) — Операції маніпулювання даними (Insert, Update, Delete).
 * [📁 15_postgres_agg_group_by](15_postgres_agg_group_by) — Розширене поєднання даних через JOIN та вертикальне об'єднання UNION.
 * [📁 16_postgres_join_union](16_postgres_join_union) — Практика та закріплення роботи зі складними об'єднаннями таблиць.
 * [📁 17_postgres_view_cte_subqueries](17_postgres_view_cte_subqueries) — Групування даних та фільтрація агрегованих значень (HAVING).
@@ -27,9 +27,9 @@
 * [📁 22_power_bi_basics](22_power_bi_basics) — Знайомство з інтерфейсом та імпорт перших джерел даних.
 * [📁 23_power_bi_power_query](23_power_bi_power_query) — ETL-процеси: очищення, делікатна трансформація та зшивання таблиць.
 * [📁 25_power_bi_dax](25_power_bi_dax) — Написання мір на DAX (Конверсії, Трафік, Розрахунок 7-денного ковзного середнього).
-* [📁 26_power_bi_dashboards](26_power_bi_dashboards) — Дизайн інтерфейсу, налаштування крос-фільтрації та фінальна візуалізація звіту (Скріншоти дашборду).
-* [📁 27_power_bi_advanced](27_power_bi_advanced) — Просунуті техніки аналітики та кастомізація звітів (Скріншоти та схеми).
+* [📁 26_power_bi_visual](26_power_bi_visual) — Дизайн інтерфейсу, налаштування крос-фільтрації та фінальна візуалізація звіту (Скріншоти дашборду).
+* [📁 27_power_bi_advanced](27_power_bi_interactive) — Просунуті техніки аналітики та кастомізація звітів (Скріншоти та схеми).
 
 ### 📊 Модуль 4: Просунута візуалізація в Tableau
-* [📁 28_tableau_data_sources](28_tableau_data_sources) — Підключення джерел даних, налаштування Relationships та Blending в Tableau.
+* [📁 28_tableau_data_sources](28_tableau_calc_lod) — Підключення джерел даних, налаштування Relationships та Blending в Tableau.
 * [📁 29_tableau_visual](29_tableau_visual) — Побудова розширених графіків, розрахунок складних LOD-виразів (Level of Detail) та фінальні аналітичні дашборди.
