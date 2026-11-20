@@ -11,6 +11,6 @@ as $$
 
 --SELECT title from employee where employee_id = 3;
 
-call pr_update_employee_title(3, 'something');--Sales Support Agent
+--call pr_update_employee_title(3, 'something');--Sales Support Agent
 
 --DROP PROCEDURE pr_update_employee_title(integer,text)
