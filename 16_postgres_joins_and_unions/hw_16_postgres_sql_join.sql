@@ -1,5 +1,5 @@
 SELECT  genre.name, 
-		count(track.name) as cnt_track,
+		COUNT(DISTINCT track.track_id) as cnt_track,
 		sum(invoice_line.unit_price * invoice_line.quantity) as sum_genre
 FROM track 
 JOIN genre using(genre_id)
@@ -32,11 +32,10 @@ GROUP BY customer.customer_id
 ORDER BY sum_client desc;
 
 
-SELECT track.track_id, track.name, sum(invoice_line.unit_price * invoice_line.quantity) as sum_track
+SELECT track.track_id, track.name
 FROM track
 LEFT JOIN invoice_line using(track_id)
 WHERE invoice_line.track_id IS NULL
-GROUP BY track_id
 ORDER BY track.name;
 
 SELECT artist.name, count(track_id) as cnt_track
@@ -58,8 +57,8 @@ JOIN invoice using(invoice_id)
 JOIN customer using(customer_id)
 
 GROUP BY customer.country, genre.name
-HAVING ROUND(sum(invoice_line.unit_price * invoice_line.quantity) --для наочності - зменшення кількості рядків
-		/ COUNT(DISTINCT customer.customer_id), 0) >5
+HAVING sum(invoice_line.unit_price * invoice_line.quantity) --для наочності - зменшення кількості рядків
+		/ COUNT(DISTINCT customer.customer_id) >5
 ORDER BY customer.country, avg_revenue DESC;
 
 
