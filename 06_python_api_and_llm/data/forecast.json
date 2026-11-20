@@ -1,0 +1,58 @@
+{
+  "latitude": 50.423317,
+  "longitude": 30.491209,
+  "generationtime_ms": 0.15485286712646484,
+  "utc_offset_seconds": 7200,
+  "timezone": "Europe/Kyiv",
+  "timezone_abbreviation": "GMT+2",
+  "elevation": 169.0,
+  "daily_units": {
+    "time": "iso8601",
+    "sunrise": "iso8601",
+    "sunset": "iso8601",
+    "snowfall_sum": "cm",
+    "showers_sum": "mm",
+    "temperature_2m_min": "°C",
+    "temperature_2m_max": "°C",
+    "precipitation_probability_max": "%",
+    "windgusts_10m_max": "km/h"
+  },
+  "daily": {
+    "time": [
+      "2026-11-13",
+      "2026-11-14"
+    ],
+    "sunrise": [
+      "2026-11-13T07:08",
+      "2026-11-14T07:10"
+    ],
+    "sunset": [
+      "2026-11-13T16:15",
+      "2026-11-14T16:13"
+    ],
+    "snowfall_sum": [
+      0.0,
+      0.0
+    ],
+    "showers_sum": [
+      0.3,
+      0.0
+    ],
+    "temperature_2m_min": [
+      4.2,
+      2.3
+    ],
+    "temperature_2m_max": [
+      10.7,
+      5.5
+    ],
+    "precipitation_probability_max": [
+      98,
+      5
+    ],
+    "windgusts_10m_max": [
+      50.4,
+      45.4
+    ]
+  }
+}
