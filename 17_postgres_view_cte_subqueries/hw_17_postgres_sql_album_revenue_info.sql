@@ -13,12 +13,12 @@ CREATE OR REPLACE VIEW vw_genre_album_spending_info as
 
 SELECT title, COUNT(genre_name) as cnt_genre 
 FROM vw_genre_album_spending_info
-GROUP BY 1
+GROUP BY album_id, title
 ORDER BY cnt_genre DESC;--кількість жанрів для кожного альбома
 
 SELECT title, sum(total_sum) as total_sum
 FROM vw_genre_album_spending_info
-GROUP BY 1
+GROUP BY album_id, title
 ORDER BY total_sum DESC;--дохід від кожного альбома
 
 SELECT cnt_genre, 
@@ -29,9 +29,9 @@ FROM (
 			COUNT(DISTINCT genre_name) as cnt_genre,  
 			sum(total_sum) as album_total_sum
 	FROM vw_genre_album_spending_info
-	GROUP BY 1
+	GROUP BY album_id, title
 	ORDER BY cnt_genre DESC
-	)
+	) as album_stats
 GROUP BY cnt_genre
 ORDER BY cnt_genre;
 --Середній дохід збільшується відповідно до кількості жанрів в альбомі,
