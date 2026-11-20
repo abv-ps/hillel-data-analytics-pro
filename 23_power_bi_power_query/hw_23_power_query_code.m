@@ -10,7 +10,7 @@ let
     Источник = Excel.Workbook(File.Contents("D:\Downloads\ab_test_dataset_v5.xlsx"), null, true),
     country_Sheet = Источник{[Item="country",Kind="Sheet"]}[Data],
     #"Повышенные заголовки" = Table.PromoteHeaders(country_Sheet, [PromoteAllScalars=true]),
-    #"Измененный тип" = Table.TransformColumnTypes(#"Повышенные заголовки",{{"country id", Int64.Type}, {"country code", type text}}),
+    #"Измененный тип" = Table.TransformColumnTypes(#"Повышенные заголовки",{{"country id", Int64.Type}, {"country_code", type text}}),
     #"Удалены пустые строки" = Table.SelectRows(#"Измененный тип", each not List.IsEmpty(List.RemoveMatchingItems(Record.FieldValues(_), {"", null}))),
     #"Добавлен пользовательский объект" = Table.AddColumn(#"Удалены пустые строки", "ID type", each "Country"),
     #"Измененный тип1" = Table.TransformColumnTypes(#"Добавлен пользовательский объект",{{"ID type", type text}})
