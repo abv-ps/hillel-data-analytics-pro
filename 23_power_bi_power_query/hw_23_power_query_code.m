@@ -1,9 +1,9 @@
-### 🛠️ Етап очищення та трансформації даних (Power Query / M)
+### Етап очищення та трансформації даних (Power Query / M)
 
 Для підготовки даних до аналізу було проведено комплексне очищення, фільтрацію за датами (серпень 2025 року), розрахунок метрик активності користувачів та об'єднання довідників.
 
 <details>
-<summary>📝 Таблиця: country (Довідник країн)</summary>
+<summary>Таблиця: country (Довідник країн)</summary>
 
 ```powerquery
 let
@@ -20,7 +20,7 @@ in
 </details>
 
 <details>
-<summary>📝 Таблиця: device (Довідник пристроїв)</summary>
+<summary>Таблиця: device (Довідник пристроїв)</summary>
 
 ```powerquery
 let
@@ -37,7 +37,7 @@ in
 </details>
 
 <details>
-<summary>📝 Таблиця: group (Словник тестових груп)</summary>
+<summary>Таблиця: group (Словник тестових груп)</summary>
 
 ```powerquery
 let
@@ -52,7 +52,7 @@ in
 </details>
 
 <details>
-<summary>📝 Таблиця: user (Профілі користувачів та збагачення даних)</summary>
+<summary>Таблиця: user (Профілі користувачів та збагачення даних)</summary>
 
 ```powerquery
 let
@@ -73,7 +73,7 @@ in
 </details>
 
 <details>
-<summary>📝 Таблиця: ID_Dictionary (Об'єднання country та device через Append)</summary>
+<summary>Таблиця: ID_Dictionary (Об'єднання country та device через Append)</summary>
 
 ```powerquery
 let
@@ -84,7 +84,7 @@ in
 </details>
 
 <details>
-<summary>📝 Таблиця: min_date (Визначення дати першої активності)</summary>
+<summary>Таблиця: min_date (Визначення дати першої активності)</summary>
 
 ```powerquery
 let
@@ -104,7 +104,7 @@ in
 </details>
 
 <details>
-<summary>📝 Таблиця: activity_count (Розрахунок загальної кількості сесій)</summary>
+<summary>Таблиця: activity_count (Розрахунок загальної кількості сесій)</summary>
 
 ```powerquery
 let
@@ -124,7 +124,7 @@ in
 </details>
 
 <details>
-<summary>📝 Таблиця: daily (Фінальна таблиця фактів активності)</summary>
+<summary>Таблиця: daily (Фінальна таблиця фактів активності)</summary>
 
 ```powerquery
 let
