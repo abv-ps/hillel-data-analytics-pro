@@ -2,15 +2,20 @@
 --Які артисти "не приносять грошей взагалі"
 --Для кожного артиста перевіряємо, чи існує хоч один куплений трек цього артиста
 --Використовуємо NOT EXISTS з корельованим підзапитом або JOIN 
-CREATE OR REPLACE VIEW vw_artist_looser as
-	SELECT DISTINCT a.name as artist_name, al.title as album_title
-	FROM artist a
-	JOIN album al using(artist_id) 
-	WHERE NOT EXISTS (
-					SELECT 1
-					FROM track t
-					JOIN invoice_line il using(track_id)
-					WHERE t.album_id = al.album_id
-	);
-			
-SELECT * from vw_artist_looser
+CREATE OR REPLACE VIEW vw_artist_loser AS
+SELECT a.artist_id, a.name AS artist_name
+FROM artist a
+WHERE EXISTS (
+    SELECT 1
+    FROM album al
+    WHERE al.artist_id = a.artist_id
+)
+AND NOT EXISTS (
+    SELECT 1
+    FROM album al
+    JOIN track t USING(album_id)
+    JOIN invoice_line il USING(track_id)
+    WHERE al.artist_id = a.artist_id
+);
+
+SELECT * FROM vw_artist_loser

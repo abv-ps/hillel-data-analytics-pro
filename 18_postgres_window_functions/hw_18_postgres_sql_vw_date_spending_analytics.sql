@@ -7,7 +7,7 @@
 --Об’єднай клієнтів з інвойсами та рядками інвойсів
 --Обчисли загальну суму кожного інвойсу
 --Застосуй кумулятивну суму, рухоме середнє та ранжування
-CREATE OR REPLACE VIEW vw_date_spending_analitics as
+CREATE OR REPLACE VIEW vw_date_spending_analytics as
 WITH invoice_info as (
 	SELECT c.first_name || ' ' || c.last_name AS full_name,
 			c.customer_id as customer_id,
@@ -35,5 +35,5 @@ SELECT full_name, invoice_date, invoice_sum,
 			), 2) as moving_avg_3_last_invoices
 FROM invoice_info;
 
-SELECT * from vw_date_spending_analitics;
+SELECT * from vw_date_spending_analytics;
 		
