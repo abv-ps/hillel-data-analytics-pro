@@ -17,7 +17,7 @@ to_char(AVG(milliseconds) * interval '1 millisecond', 'MI:SS') AS avg_time
 FROM track
 GROUP BY genre_id
 HAVING AVG(milliseconds) > 250000
-ORDER BY avg_time DESC;
+ORDER BY AVG(milliseconds) DESC;
 
 
 SELECT support_rep_id as sup_rep, COUNT(*) as cnt_client
